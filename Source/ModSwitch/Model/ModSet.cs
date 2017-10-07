@@ -41,9 +41,7 @@ namespace DoctorVanGogh.ModSwitch {
             fiModsConfig_data = AccessTools.Field(tModsConfig, @"data");
 
             rgxSteamModId = new Regex(@"^\d+$", RegexOptions.Singleline | RegexOptions.Compiled);
-
-            Util.Log($"ModSet cctor: {tModsConfig != null}, {tModsConfigData != null}, {fiModsConfigData_activeMods != null}, {fiModsConfigData_buildNumber != null}, {fiModsConfig_data != null}");
-        }
+         }
 
         public ModSet(Settings owner) {
             _owner = owner;

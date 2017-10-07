@@ -276,6 +276,10 @@ namespace DoctorVanGogh.ModSwitch {
 			/// Gets the translation key for '<em>Later</em>'
 			/// </summary>
 			public const string @ModSwitch_RestartRequired_Defer = "ModSwitch.RestartRequired.Defer";
+			/// <summary>
+			/// Gets the translation key for '<em>Reset {0:g}</em>'
+			/// </summary>
+			public const string @ModSwitch_Reset = "ModSwitch.Reset";
 		}
 	}
 }

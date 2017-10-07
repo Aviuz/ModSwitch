@@ -46,6 +46,11 @@ namespace DoctorVanGogh.ModSwitch {
         public ModAttributes this[string mod] => _settings.GetOrInsertAttributes(mod);
         public ModAttributes this[ModMetaData mod] => this[mod.Identifier];
 
+        public ModSet AddNewSet(string name) {
+            var set = ModSet.FromCurrent(name, _settings);
+            _settings.Sets.Add(set);
+            return set;
+        }
 
         public void MovePosition(ModMetaData mod, Position position) {
             List<ModMetaData> mods  = (List<ModMetaData>) fiModLister_mods.GetValue(null);
